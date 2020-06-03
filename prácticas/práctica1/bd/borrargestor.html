@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Darse de baja del gestor
+    </title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+
+    <!-- CABECERA ************************************* -->
+    <header>
+     
+        <section class="index_head1">
+            <!--imagen logo pequeño-->
+            <figure>
+                <img src="imagenes/logo.jpg" id="header_image" alt="logo.png" />        
+            </figure>
+        </section>
+
+
+        <section id="index_head2">
+            <h1>Gestor de bibliotecas digitales</h1>
+        </section>
+        
+
+        <section class="index_head1" id="head3">
+            <br>
+            <img src="imagenes/img_avatar.png" alt="mi avatar"  id="icono_user"/>
+            <br>
+            Usuario
+            <br>
+        </section>
+        
+    </header>
+
+    <!-- PRINCIPAL ------------------ -->
+
+    <main style="clear: both;">
+        <!-- CUADRO DEL FORMULARIO COMPLETO -->
+        <section id="formulario_alta">
+
+            <p id="intro">Este formulario le ayudará a dar de baja a un usuario. Rellene los campos  y después pulse "Dar de baja"</p>
+        
+            <section id="izda">
+                <img src="imagenes/img_avatar.png" id="img_descripcion">
+            </section>
+
+            <form id="dcha">
+
+                <table style="text-align: left; width: 100%;">
+                    
+                    <tr>
+                        <th><label for="usuario">Escriba su nombre de usuario:</label></th>
+                        <th>
+                            <input type="text" required id="usuario"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="pass" >Escriba su contraseña:</label></th>
+                        <th>
+                            <input type="password" required id="pass"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Seleccione el usuario que desea eliminar:</th>
+                        <th>
+                            <select id="usuarios_" required>
+                                <option>Usuario de prueba 1</option>
+                                <option>Usuario de prueba 2</option>
+                                <option>Usuario de prueba 3</option>
+                                <option>Usuario de prueba 4</option>
+                            </select>
+                        </th>
+                    </tr>
+                    
+                </table>                
+            </form>
+
+            <form style="text-align: center;">
+                <input type="button" value="Dar de baja"/>
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+    <!-- PIE   ************************************* -->
+
+    <footer>
+        
+        <a href="contacto.html"  >Contacto</a> - <a href="como_se_hizo.pdf" >Cómo se hizo</a>
+    </footer>
+
+
+</body>

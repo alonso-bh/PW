@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Gestor de bibliotecas digitales</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+    <!-- CABECERA ************************************* -->
+    <header>
+        <section class="index_head1">
+            <!--imagen logo pequeño-->
+            <figure>
+                <img src="imagenes/logo.jpg" id="header_image" alt="logo.png" />        
+            </figure>
+        </section>
+
+        <section id="index_head2">
+            <h1>Gestor de bibliotecas digitales</h1>
+        </section>
+        
+        <section class="index_head1" id="head3">
+            <br>
+            <form id="sesion">
+                <label for="tu_nombre" >Usuario:</label> <br>
+                <input type="text" id="tu_nombre" />
+                <br> 
+                <label for="tu_contraseña" >Contraseña:</label> <br>
+                <input type="password"  id="tu_contraseña" />
+                <br>
+            </form>
+            <br>
+            <form action="gestorbd.html" id="enviar">
+                <input type="submit"  value="Enviar" id="boton_enviar" /> 
+            </form>
+            <br>
+        </section>
+        
+    </header>
+    
+    <!-- CUERPO ************************************* -->
+    <main>
+        <br>
+
+        <!-- LATERAL IZDO (IMAGEN) ******************-->
+
+        <section class="mitad" id="mitad_izda">
+            <figure>
+                <img src="imagenes/agua.jpg" class="imagen_lateral" />
+            </figure>
+        </section>
+
+        <!-- LATERAL DCHO (BIBLIOTECAS) **************  -->
+
+        <section class="mitad" id="mitad_dcha">
+            Bibliotecas dadas de alta en el gestor 
+            <br><br>
+
+            <!--BIBLIOTECAS DIGITALES (representacion) -->
+            
+            <article class="unabiblio">
+                <img class="im_biblio" src="imagenes/bib3.jpg"  />
+                <p class="tit_biblio"> <a href="bd1.html" >Monumentos históricos de Madrid</a>  </p>                                
+            </article>
+            <br>
+
+            <article class="unabiblio">
+                <img class="im_biblio" src="imagenes/bib2.jpg"  />
+                <p class="tit_biblio"> <a href="bd1.html" >Grandes Éxitos de la Literatura Contemporánea</a>  </p>              
+                                
+            </article>
+
+            <br>
+            <article class="unabiblio">
+                <img class="im_biblio" src="imagenes/bib1.jpg"  />
+                <p class="tit_biblio"> <a href="bd1.html" >Bandas sonoras en el cine</a>  </p>
+                                                
+            </article>
+
+            <br> 
+            <article class="unabiblio">
+                <img class="im_biblio" src="imagenes/agua.jpg"  />
+                <p class="tit_biblio"> <a href="bd1.html" >Grandes descubrimientos de la Física</a>  </p>
+            </article>
+            
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE   ************************************* -->
+
+    <footer>
+        
+        <a href="contacto.html"  >Contacto</a> - <a href="como_se_hizo.pdf" >Cómo se hizo</a>
+    </footer>
+</body>

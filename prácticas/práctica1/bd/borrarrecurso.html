@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Eliminar un recurso de la biblioteca digital
+    </title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+
+    <!-- CABECERA ************************************* -->
+    <header>
+
+        <section class="index_head1">
+            <!--imagen logo pequeño-->
+            <figure>
+                <img src="imagenes/bib2.jpg" id="header_image" alt="logo.png" />        
+            </figure>
+        </section>
+
+
+        <section id="index_head2">
+            <h1>Grandes obras de la Literatura Contemporánea</h1>
+        </section>
+        
+
+        <section class="index_head1" id="head3">
+            <br>
+            <img src="imagenes/img_avatar.png" alt="mi avatar"  id="icono_user"/>
+            <br>
+            Usuario
+            <br><br> 
+        </section>
+        
+    </header>
+
+
+    <main>
+         <!-- BARRA DE SECCIONES-->
+        
+         <nav id="menu">
+            <ul>
+                <li><a href="recursosseccion1.html">Literatura Española</a></li>
+                <li><a href="recursosseccion1.html">Literatura Iberoamericana</a></li>
+                <li><a href="recursosseccion1.html">Literatura europea</a></li>
+                <li><a href="recursosseccion1.html">Literatura estadounidense</a></li>
+    
+            </ul>
+        </nav>
+
+        <!-- CUADRO DEL FORMULARIO COMPLETO -->
+
+        <section id="formulario_alta">
+            <p>Este formulario le ayudará a borrar un recurso de la biblioteca. Rellene los campos indicados. Todos los campos son obligatorios. </p>
+        
+            <section id="izda">
+                <img src="imagenes/bib1.jpg"  id="img_descripcion">
+            </section>
+
+            <form id="resto">
+
+                <table style="text-align: left; width: 100%;">
+                   
+                    <th>Seleccione un recurso de los existentes:</th>
+                        <th>
+                            <select id="usuarios_" required>
+                                <option>Invierno en Lisboa - Antonio Muñoz Molina</option>
+                                <option>Irse de Casa - Carmen Martín Gaite</option>
+                                <option>Bertolt Brecht - Los negocios del señor Julio César</option>
+                                <option>Otra vuelta de tuerca - Henry James </option>
+                            </select>
+                        </th>
+                    <tr>
+                        <th><label for="usuario">Escriba su nombre de usuario:</label></th>
+                        <th>
+                            <input type="text" required id="usuario"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="pass" >Escriba su contraseña:</label></th>
+                        <th>
+                            <input type="password" required id="pass"/>
+                        </th>
+                    </tr>
+
+                </table>
+                
+            </form>
+
+            <form style="text-align: right;">
+                <input type="submit" value="Enviar datos"/>
+            </form>         
+
+        
+        </section>
+
+        
+
+
+    </main>
+
+    <!-- PIE   ************************************* -->
+
+    <footer>
+        
+        <a href="contacto.html"  >Contacto</a> - <a href="como_se_hizo.pdf" >Cómo se hizo</a>
+    </footer>
+
+
+</body>

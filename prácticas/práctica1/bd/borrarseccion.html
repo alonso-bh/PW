@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Borrar una biblioteca digital 
+    </title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+
+    <!-- CABECERA ************************************* -->
+    <header>
+     
+        <section class="index_head1">
+            <!--imagen logo pequeño-->
+            <figure>
+                <img src="imagenes/bib2.jpg" id="header_image" alt="logo.png" />        
+            </figure>
+        </section>
+
+
+        <section id="index_head2">
+            <h1>Grandes obras de la literatura contemporánea </h1>
+        </section>
+        
+
+        <section class="index_head1" id="head3">
+            <br>
+            <img src="imagenes/img_avatar.png" alt="mi avatar"  id="icono_user"/>
+            <br>
+            Usuario
+            <br><br> 
+        </section>
+        
+    </header>
+
+    <!-- PRINCIPAL ------------------ -->
+
+    <main style="clear: both;">
+
+        <!-- menú -->
+
+        <nav id="menu">
+            <ul>
+                <li><a href="recursosseccion1.html">Literatura Española</a></li>
+                <li><a href="recursosseccion1.html">Literatura Iberoamericana</a></li>
+                <li><a href="recursosseccion1.html">Literatura europea</a></li>
+                <li><a href="recursosseccion1.html">Literatura estadounidense</a></li>
+    
+            </ul>
+        </nav>
+
+        <!-- CUADRO DEL FORMULARIO COMPLETO -->
+        <section id="formulario_alta">
+
+            <p id="intro">Este formulario le ayudará a eliminar 
+                una sección de la biblioteca digital actual. 
+                Rellene los campos (todos son obligatorios) y 
+                después, cuando esté seguro, pulse en "Borrar sección".  </p>
+            
+            <section id="izda">
+                <img src="imagenes/bib1.jpg"  id="img_descripcion">
+            </section>
+
+            <form id="dcha">
+
+                <table style="text-align: left; width: 100%;">
+                    
+                    <tr>
+                        <th> 
+                            <label for="secciones" >Seleccionar sección a borrar: </label> 
+                        </th>
+                        <th>
+                            <select id="secciones" required>
+                                <option>Literatura Iberoamericana</option>
+                                <option>Literatura Española</option>
+                                <option>Literatura europea</option>
+                                <option>Literatura estadounidense</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="usuario">Escriba su nombre de usuario:</label></th>
+                        <th>
+                            <input type="text" required id="usuario"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label for="pass" >Escriba su contraseña:</label></th>
+                        <th>
+                            <input type="password" required id="pass"/>
+                        </th>
+                    </tr>
+                    
+                </table>                
+            </form>
+
+            <form style="text-align: center;">
+                <input type="button" value="Eliminar sección"/>
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+    <!-- PIE   ************************************* -->
+
+    <footer>
+        
+        <a href="contacto.html"  >Contacto</a> - <a href="como_se_hizo.pdf" >Cómo se hizo</a>
+    </footer>
+
+
+</body>

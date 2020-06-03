@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Editar un recurso
+    </title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+
+    <!-- CABECERA ************************************* -->
+    <header>
+
+        <section class="index_head1">
+            <!--imagen logo pequeño-->
+            <figure>
+                <img src="imagenes/bib2.jpg" id="header_image" alt="logo.png" />        
+            </figure>
+        </section>
+
+
+        <section id="index_head2">
+            <h1>Grandes obras de la Literatura Contemporánea</h1>
+        </section>
+        
+
+        <section class="index_head1" id="head3">
+            <br>
+            <img src="imagenes/img_avatar.png" alt="mi avatar"  id="icono_user"/>
+            <br>
+            Usuario
+            <br><br>
+        </section>
+        
+    </header>
+
+
+    <main>
+         <!-- BARRA DE SECCIONES-->
+        
+         <nav id="menu">
+            <ul>
+                <li><a href="recursosseccion1.html">Literatura Española</a></li>
+                <li><a href="recursosseccion1.html">Literatura Iberoamericana</a></li>
+                <li><a href="recursosseccion1.html">Literatura europea</a></li>
+                <li><a href="recursosseccion1.html">Literatura estadounidense</a></li>
+    
+            </ul>
+        </nav>
+
+        <!-- CUADRO DEL FORMULARIO COMPLETO -->
+
+        <section id="formulario_alta">
+            <p>Este formulario le ayudará a modificar los datos de un recurso. Rellene los campos que desee modificar. Preste atención a los campos obligatorios.</p>
+        
+            <form id="subir">
+                <label for="#subirF" >Subir</label> <br>
+                <input type="file" name="Subir archivo"    id="subirF"/>
+            </form>
+
+            <form id="resto">
+
+                <table style="text-align: left; width: 100%;">
+                    <tr>
+                        <th>Seleccione un recurso de los existentes:</th>
+                        <th>
+                            <select id="usuarios_" required>
+                                <option>Invierno en Lisboa - Antonio Muñoz Molina</option>
+                                <option>Irse de Casa - Carmen Martín Gaite</option>
+                                <option>Bertolt Brecht - Los negocios del señor Julio César</option>
+                                <option>Otra vuelta de tuerca - Henry James </option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> <label for="titulo" >Título:</label> </th>
+                        <th>
+                            <input type="text"  value="Tiempo de Silencio"  id="titulo" />
+                        </th>
+                        
+                    </tr>
+                    <tr>
+                        <th><label for="autor">Autor:</label></th>
+                        <th>
+                            <input type="text" value="Luis Martín Santos"  id="autor"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> <label for="secciones" >Seleccionar sección del recurso: </label> </th>
+                        <th>
+                            <select id="secciones"  >
+                                <option>Literatura Iberoamericana</option>
+                                <option>Literatura Española</option>
+                                <option>Literatura europea</option>
+                                <option>Literatura estadounidense</option>
+                            </select>
+                        </th>
+
+                    </tr>
+
+                    <tr>
+                        <th> <label for="tipo">Tipo de recurso: </label> </th>
+                        <th>
+                            <select id="tipo">
+                                <option>Audio</option>
+                                <option>Vídeo</option>
+                                <option>Texto</option>
+                                <option>Imagen</option>
+                            </select>
+                        </th>
+                    </tr>
+
+                </table>
+              
+                
+            </form>
+
+            <form id="descripcion">
+                <label for="areatexto" >Descripción: </label>
+                <br>
+                <textarea id="areatexto" rows="8" cols="30">Aquí debería de haber una descripción (o no...)</textarea>
+            </form>
+
+            <form style="text-align: right;">
+                <input type="submit" value="Enviar datos"/>
+            </form>
+
+
+
+            
+
+        </section>
+
+        
+
+
+    </main>
+
+    <!-- PIE   ************************************* -->
+
+    <footer>
+        
+        <a href="contacto.html"  >Contacto</a> - <a href="como_se_hizo.pdf" >Cómo se hizo</a>
+    </footer>
+
+
+</body>
