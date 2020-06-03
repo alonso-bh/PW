@@ -1,0 +1,719 @@
+/* FICHERO DE ESTILOS DEL SITIO WEB  */
+
+
+/******************************************************************/
+/******************************************************************/
+/**************               cabecera               **************/
+
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5%;
+}
+
+
+h1 {            /*      TÍTULO CENTRAL DE LA PÁGINA */
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(11, 11, 94);
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px grey;
+}
+
+
+@media (max-width: 550px) {    /* pantalla móvil   */
+
+    .index_head1{       /* zonas laterales de la cabecera común a todas las páginas */
+        float: none;
+        width: 100%;
+        text-align: center;
+        opacity: 80%;
+    }
+
+    #index_head2{       /* zona central de la cabecera (título) común a todas las páginas*/
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    #head3 {   /* EStilo para el lateral DERECHO del header (sólo el derecho, */
+        background-color: beige;
+        opacity: 80%;
+        text-align: center;
+    }
+
+    #header_image{
+        width: 100%;
+    }
+
+
+    #icono_user {     /* Estilos para la foto del user [bd1.html y derivadas]  (lateral dcho) */
+        box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+        border-radius: 50%;
+        width: 20%;
+    }
+}
+
+@media (min-width: 760px) { /* pantalla PC */
+
+    .index_head1{
+        float: left;
+        width: 27%;
+        text-align: center;
+        opacity: 80%;
+    }
+
+
+
+    #index_head2{
+        float: left;
+        width: 45%;
+        text-align: center;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    #head3 {   /* EStilo para el lateral derecho del header*/
+        background-color: beige;
+        opacity: 80%;
+        text-align: center;
+    }
+
+    #header_image{
+        width: 70%;
+        border-radius: 10px;
+    }
+
+
+    #icono_user {     /* Estilos para la foto del user (lateral dcho) */
+        box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+        border-radius: 50%;
+        width: 20%;
+    }
+
+
+}
+
+/* ESTILOS ESPECÍFICOS DE LA CABECERA DE GESTORBD.HTML */
+
+#user {  /* logotipo del usuario (óvalo con el nombre) */
+    padding: 3%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+    background-color: azure;
+}
+
+  /*  Estilos para alta/baja/borrar usuario en la cabecera 
+    de gestorbd.html **/
+
+.sobre_user {
+    width: 20%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: aqua;
+    box-shadow: 2px 2px 1px  grey;
+    border-style: none;
+    font-size: small;   
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre_user:hover{         
+    background-color: rgb(53, 7, 97);
+    box-shadow: grey;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: none;
+    font-size: small;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: none;
+    color: white;
+    text-shadow: none;
+    transition: all .3s;
+}
+
+/*---fin estilos especiales header de gestorbd.html */
+
+
+
+/******************************************************************/
+/******************************************************************/
+/* CUERPO DE LOS DOCUMENTOS */
+/*
+    Se irán indicando los estilos asociados a cada documento. 
+    La justificación de algunos estilos relevantes se detalla
+    en la documentación del sitio web.
+*/
+body{
+    background-image: url(imagenes/fondo.jpg) ;
+    background-size: contain;
+    height: 100%;
+}
+
+
+main{
+    /* height: 60%; /* ajuste vertical ******************/
+    margin-bottom: 10px;
+    clear: both;
+}
+
+/** INDEX.HTML  _______________________________*/
+
+
+/*para cada columna (section)*/
+.mitad{
+    width: 47%;
+    border-radius: 0.2cm;
+    padding: 1%;
+    border-width: 1px;
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+
+/*  lateral izquierdo (imagen)  */
+#mitad_izda{
+    clear: left;        /*  evitar que se coloque a la izda de la head */
+    float: left;
+    padding: 0%;
+    border-radius: 0%;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 80%;    
+    text-align: center;
+    vertical-align: middle;
+    /*height: 500px;******/
+}
+
+
+.imagen_lateral {       /* imagen del lateral Izdo */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* lateral derecho */
+#mitad_dcha{
+    text-align: center;
+    float: left;
+    font-size: x-large;
+    margin-left: 2%;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 1px rgb(139, 136, 136);
+    background-color: azure;
+    opacity: 80%;
+}
+
+
+.unabiblio{     /* formato para el recuadro de cada biblioteca */
+    background-color: rgb(192, 241, 241);
+    font-size: medium;
+    border-radius: 0.5px;
+    border-style: outset;
+    padding: 1% ;
+    
+    border-radius: 0.3cm;
+    text-align: center;
+    font-style: normal;
+}
+
+
+.im_biblio{     /* IMAGEN DE CADA BIBLIOTECA*/
+    width: 30%;
+    box-shadow: blue;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tit_biblio{       /*  formato de título de cada biblioteca */
+    font-size: larger;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3%;
+    width: 60%;
+}
+
+
+
+
+/*    formateo de enlaces de index.html   */
+
+.mitad a:link {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(33, 33, 68);
+    font-weight: bold   ;
+}
+
+
+.mitad a:hover{
+    
+    text-decoration: none;
+    text-shadow: 2px 2px 1px grey ;
+    color: black;
+    font-weight: bold;
+    transition: all .3s;
+    
+}
+
+
+/* GESTORBD.HTML ________________________________________*/
+
+
+/* (comparte el resto de estilos comunes de index.html)  */
+
+#mitad_dcha_gestor{
+    overflow: auto ;   /*  barra de desplazamiento FIJA Y VISIBLE*/
+    text-align: center;
+    float: left;
+    font-size: x-large;
+    margin-left: 2%;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 1px rgb(139, 136, 136);
+    background-color: azure;
+    opacity: 80%;
+    height: 500px;    
+}
+
+#_info_crear_biblio{    /* párrafo encima del enlace(imagen) de crearbd */
+    padding: 2%;
+    background-color: aqua;
+}
+
+/* BD1.HTML _______________________________________________ */
+
+
+/************* ESTILOS SOBRE EL MENÚ ****************/
+/* este menú se aplica a todas las páginas de la BD, tal como se 
+    indica en el guión de la práctica 
+*/
+
+#menu{
+    clear: both;
+    background-color: rgb(187, 186, 186);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 4%;   
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+    
+}
+
+#menu ul li{
+    display: inline-block;      
+}
+
+#menu ul li a{
+    color: white;
+    display: block;  
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#menu ul li a:hover{
+    transition: all .4s;
+    color: rgb(86, 86, 206);
+}
+
+
+/* FIN DEL MENÚ ******************/
+
+
+
+/******************* LATERAL IZDO ***************/
+
+
+@media (min-width: 760px) { /* pantallas PC  */
+    #lateral_izdo{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        clear: both;
+        font-size: medium;
+        margin-left: 3%;
+        width: 55% ;
+        background-color: rgb(222, 245, 222);
+        float: left;
+        opacity: 80%;
+        padding: 2%;
+        border-radius: 4px;
+        height: 560px;       
+        margin-bottom: 5px;
+        margin-top: 6px;    
+    }
+}
+
+@media (max-width: 550px) {     /* VERSIÓN MÓVIL del lateral izdo de bd1.html*/
+    #lateral_izdo{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        clear: both;
+        font-size: medium;
+        width: 96% ;
+        background-color: rgb(83, 189, 83);
+        float: none;
+        display: block;
+        opacity: 80%;
+        padding: 2%;
+        border-radius: 4px;
+        height: 90% /*560px;       */
+        margin-bottom: 5px;
+        margin-top: 6px;    
+    }
+}
+
+
+
+.titulo_secciones {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+
+
+#cuadro_destacados{    /* caja con barra de desplazamiento para los recursos destacados*/ 
+    overflow: auto;
+    height: 70%;
+    position: relative;
+}
+
+
+
+
+/* para cada recurso destacado*/
+#destacado{
+    border-style: double;
+    margin: 2%; 
+    height: fit-content;
+    overflow: auto;
+}
+
+
+#imagen_recurso{
+    width: 30%;
+    float: left;
+    margin: 2%;
+}
+
+.tit_recurso {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+}
+
+.descripcion_recurso{
+    padding: 2%;
+    text-align: justify; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+
+
+
+/** *************** lateral derecho *********** **/
+
+
+
+@media (max-width: 550px) {     /*  para móvil   */
+    #lateral_dcho {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 96%;
+        background-color: aqua;
+        float: none ; 
+        padding: 2%;
+        border-radius: 4px ;
+        margin-bottom: 5px;
+        margin-top: 6px;
+        opacity: 80%;
+    }
+}
+
+@media (min-width: 760px) {     /*  para PC   */
+
+    #lateral_dcho {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 30%;
+        background-color: aqua;
+        float:left; 
+        margin-left: 2%;
+        padding: 2%;
+        border-radius: 4px ;
+        margin-bottom: 5px;
+        margin-top: 6px;
+        opacity: 80%;
+    }
+
+}
+
+
+#volver a{      /* estilo para el enlace lateral de volver*/
+    text-decoration: none;
+    text-underline-position: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#separador{
+    clear:left;
+}
+
+
+
+.iconos_manejo {       /* iconos gráficos para gestión de secciones y recursos ... */
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 3%;
+
+}
+
+.iconos_manejo:hover{
+    box-shadow: 1.5px 1.5px 1.5px rgb(172, 165, 165);
+    transition: all .4s;
+}
+
+
+.tit_manip {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+
+
+/* RECURSOSSECCION1.HTML ____________________________________*/
+
+
+#titulo_seccion {      /* bajo el menú */
+    font-size: larger;
+    padding: 1%;
+    width: 40%;
+    background-color: beige;
+    box-shadow: 1px 1px 1px grey;
+    text-align: center;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.recurso{       /* celda decorada para cada recurso  */
+    text-align: center;
+    background-color: rgb(109, 187, 231);
+    border-radius: 3px ;
+    box-shadow: 2px 2px 2px  grey;
+    width: 32%;
+    margin-left: 1%;
+    margin-bottom: 4px;
+    opacity: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    float: left;
+    display: inline-block;
+}
+
+.tit_recurso a{
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tit_recurso:hover {
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px grey;
+    transition: all .2s ;
+    color: rgb(51, 39, 39);
+}
+
+.texto_recurso {
+    font-style: normal;
+    font-weight: normal;
+    padding: 3px;
+    overflow-y: scroll;
+    height: 120px;
+}
+
+
+
+/* indice de páginas: 1 2 3 4 5 .. 10*/
+#paginas {  
+    clear: both ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(199, 175, 175);
+    font-weight: normal;
+    font-size: large;
+    opacity: 80%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#paginas a:link {
+    text-decoration: none;
+}
+
+#paginas a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px grey;
+    transition: all .2s;
+}
+
+
+
+/* RECURSO1.HTML _______________________________________________ */
+
+
+#cuadro_info {  /* recuadro con toda la info */
+    height: 80%;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 4px;
+    opacity: 85%;
+    background-color: rgb(12, 211, 211);
+    box-shadow: 2px 2px 2px grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#izda{     /* lateral izquierdo del recuadro*/
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(18, 129, 129);
+    vertical-align: middle;
+}
+
+#img_descripcion {
+    width: 90%;
+}
+
+#dcha {         /* lateral derecho del recuadro */ 
+    padding-left: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.columna_izda {
+    font-weight: normal;
+    padding-left: 3%;
+}
+
+#descripcion {      
+    margin-top: 2%;
+    clear: left;
+    display: block;
+    
+}
+
+#cuadro_descripcion {
+    padding: 3px;
+    background-color: beige;
+
+}
+
+
+/* estilos sobre los botones Anterior y Siguiente de recurso1.html */
+#navegacion_recurso {
+    background-color: rgb(79, 199, 199);
+    text-align: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accesos {
+    width: 20%;
+    font-weight: normal;
+}
+
+.accesos a {
+    text-decoration: none;
+    color: rgb(67, 38, 197);
+}
+
+.accesos a:hover {
+    text-decoration: underline;
+}
+
+#centro {
+    width: 60%;
+}
+
+/* ALTARECURSO.HTML ___________________________________________________ */
+
+/** formulario                          **/
+/* Todos los docs HTML que contengan un formulario o similar, compartirán los estilos
+    siguientes.
+*/
+
+#formulario_alta {  /* cuadro principal (coloreado) */
+    height: 100%;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 4px;
+    opacity: 70%;
+    background-color: rgb(12, 211, 211);
+    box-shadow: 2px 2px 2px grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#subir{     /* lateral izquierdo del formulario*/
+    font-size: large; 
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(18, 129, 129);
+    vertical-align: middle;
+}
+
+#resto {         /* lateral derecho del formulario*/ 
+    padding-left: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+}
+
+
+/****************************************************************/
+/* ESTILOS PARA EL FOOTER   */
+
+footer{
+    margin-top: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: rgb(37, 182, 18); 
+    clear: left;        /* reestablecer el agrupamiento por líneas (deshacer float anterior) */
+    font-size: large;
+    font-weight: normal;
+    /*height: 10%; /* ajuste vertical ******************/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+    transition: all .3s;
+    text-shadow: 2px 2px 2px grey;
+    text-decoration: underline;
+}
