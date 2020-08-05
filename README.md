@@ -9,6 +9,6 @@ Material de la asignatura:
 
 Sobre la calidad de las resoluciones propuestas:
 * Calificación de la práctica 1: 10/10 (100%)
-* Calificación de la práctica 2: [por determinar]
+* Calificación de la práctica 2: 10/10 (100%)
 
 (Repositorio en construcción)
